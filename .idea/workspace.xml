@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a7a0fc5f-3030-4762-8232-b4625d5a4250" name="Changes" comment="Felépípés&#10;-metódusok">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="a7a0fc5f-3030-4762-8232-b4625d5a4250" name="Changes" comment="licit()">
       <change beforePath="$PROJECT_DIR$/src/hu/petrik/aukcioprojekt/Festmeny.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hu/petrik/aukcioprojekt/Festmeny.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hu/petrik/aukcioprojekt/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hu/petrik/aukcioprojekt/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +50,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663827017250</updated>
-      <workItem from="1663827018499" duration="2677000" />
+      <workItem from="1663827018499" duration="3157000" />
     </task>
     <task id="LOCAL-00001" summary="Felépípés">
       <created>1663827919190</created>
@@ -68,7 +66,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663828367357</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="licit()">
+      <created>1663829941382</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1663829941382</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -88,6 +93,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Felépípés" />
     <MESSAGE value="Felépípés&#10;-metódusok" />
-    <option name="LAST_COMMIT_MESSAGE" value="Felépípés&#10;-metódusok" />
+    <MESSAGE value="licit()" />
+    <option name="LAST_COMMIT_MESSAGE" value="licit()" />
   </component>
 </project>

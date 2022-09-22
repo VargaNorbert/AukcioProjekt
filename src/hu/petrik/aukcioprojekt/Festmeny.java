@@ -56,16 +56,24 @@ public class Festmeny {
             this.licitekSzama++;
             this.legutolsoLicitIdeje=LocalDateTime.now();
         }else{
-            int ujAr= (int)(legmagasabbLicit*1.1);
-            this.legmagasabbLicit=ujAr;
-            this.licitekSzama++;
-            this.legutolsoLicitIdeje=LocalDateTime.now();
-            System.out.println(this.legmagasabbLicit);
+            licit(10);
         }
 
     }
 
     public void licit(int mertek){
+
+        if (this.elkelt==true){
+            System.out.println("Sajnos ez a festmény már elkelt.");
+        }else if(mertek<10 || mertek>100){
+            System.out.println("Hibás a licit értéke.");
+        }else{
+            int ujAr= (int)(legmagasabbLicit*(1+mertek/100));
+            this.legmagasabbLicit=ujAr;
+            this.licitekSzama++;
+            this.legutolsoLicitIdeje=LocalDateTime.now();
+            System.out.println(this.legmagasabbLicit);
+        }
 
     }
 
