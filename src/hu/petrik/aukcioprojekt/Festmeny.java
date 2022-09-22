@@ -72,12 +72,21 @@ public class Festmeny {
             this.legmagasabbLicit=ujAr;
             this.licitekSzama++;
             this.legutolsoLicitIdeje=LocalDateTime.now();
-            System.out.println(this.legmagasabbLicit);
         }
 
     }
 
+    @Override
+    public String toString() {
+        String elkelt;
+        if (this.elkelt==true){
+            elkelt="Elkelt";
+            return festo+":"+cim+"("+stilus+")\n"+ elkelt+"\n"+legmagasabbLicit+"$-"+legutolsoLicitIdeje+"(Összesen: "+licitekSzama+"db)";
+        }else{
+            return festo+":"+cim+"("+stilus+")"+"\n"+legmagasabbLicit+"$-"+legutolsoLicitIdeje+"(Összesen: "+licitekSzama+"db)";
+        }
 
 
 
+    }
 }
