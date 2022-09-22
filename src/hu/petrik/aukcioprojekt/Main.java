@@ -1,5 +1,7 @@
 package hu.petrik.aukcioprojekt;
 
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -11,13 +13,16 @@ public class Main {
         String festo;
         String stilus;
 
-        List<Festmeny> list = new ArrayList<Festmeny>();
+        List<Festmeny> festmeny= new ArrayList<>();
+
 
         Festmeny f1 = new Festmeny("Csillagos éjszaka", "Vincent van Gogh", "posztimpresszionizmus");
         Festmeny f2 = new Festmeny("Éjjeli kávézó", "Vincent van Gogh", "posztimpresszionizmus");
 
-        list.add(f1);
-        list.add(f2);
+        festmeny.add(f1);
+        festmeny.add(f2);
+
+        Festmenyek festmenyek= new Festmenyek(festmeny);
 
         System.out.println("Kérlek adj meg egy darabszámot!");
         int db = sc.nextInt();
@@ -31,9 +36,20 @@ public class Main {
             System.out.print("Stílus?");
             stilus = sc.nextLine();
 
-            list.add(f1 = new Festmeny(cim, festo, stilus));
-
+           // festmeny.add(Festmeny f3= new Festmeny(cim,festo,stilus));
         }
+
+        /*try {
+            Festnyek festmenyek2 = new Festmenyek("emberek.txt");
+        } catch (FileNotFoundException e) {
+            System.out.println("Hiba,a fájl nem található.");
+            ;
+        }
+        catch (IOException e){
+            System.err.println("Ismeretlen hiba.");
+        }*/
+
+
 
 
     }
