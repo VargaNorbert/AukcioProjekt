@@ -45,10 +45,23 @@ public class Festmeny {
     }
 
     public void setElkelt(boolean elkelt){
-        this.elkelt=true;
+        this.elkelt=elkelt;
     }
 
     public void licit(){
+        if (this.elkelt==true){
+            System.out.println("Sajnos ez a festmény már elkelt.");
+        }else if(legmagasabbLicit==0){
+            this.legmagasabbLicit=100;
+            this.licitekSzama++;
+            this.legutolsoLicitIdeje=LocalDateTime.now();
+        }else{
+            int ujAr= (int)(legmagasabbLicit*1.1);
+            this.legmagasabbLicit=ujAr;
+            this.licitekSzama++;
+            this.legutolsoLicitIdeje=LocalDateTime.now();
+            System.out.println(this.legmagasabbLicit);
+        }
 
     }
 
