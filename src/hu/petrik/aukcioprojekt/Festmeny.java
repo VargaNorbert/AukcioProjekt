@@ -19,4 +19,44 @@ public class Festmeny {
         this.legmagasabbLicit=0;
         this.elkelt=false;
     }
+
+    public String getFesto(){
+        return this.festo;
+    }
+
+    public String getStilus(){
+        return this.stilus;
+    }
+
+    public int getLicitekSzama(){
+        return this.licitekSzama;
+    }
+
+    public int getLegmagasabbLicit(){
+        return this.legmagasabbLicit;
+    }
+
+    public LocalDateTime getLegutolsoLicitIdeje(){
+        return this.legutolsoLicitIdeje;
+    }
+
+    public boolean getElkelt(){
+        return this.elkelt;
+    }
+
+    public void setElkelt(boolean elkelt){
+        this.elkelt=true;
+    }
+
+    public void licit(){
+
+    }
+
+    public void licit(int mertek){
+
+    }
+
+
+
+
 }
